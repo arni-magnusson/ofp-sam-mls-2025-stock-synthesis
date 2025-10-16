@@ -18,7 +18,7 @@ The **TAF** folder extracts the data and results from SS3 format to CSV format t
 
 ## Run the assessment model
 
-The MLS 2024 revised stock synthesis model takes around 30 minutes to run. Executables are provided for Windows and Linux.
+The MLS 2024 revised stock synthesis model takes around 20 minutes to run. Executables are provided for Windows and Linux.
 
 ### Run in TAF format
 
