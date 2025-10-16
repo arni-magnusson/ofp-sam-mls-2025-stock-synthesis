@@ -5,7 +5,7 @@
 #         timeseries_area.csv, (output)
 
 library(TAF)
-
+library(wrapr)
 mkdir("output")
 
 # Read model results
@@ -74,3 +74,4 @@ write.taf(fatage, dir="output")
 write.taf(natage, dir="output")
 write.taf(timeseries.area, dir="output")
 write.taf(summary, dir="output")
+

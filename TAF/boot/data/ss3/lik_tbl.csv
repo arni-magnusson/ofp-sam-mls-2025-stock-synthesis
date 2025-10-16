@@ -1,0 +1,17 @@
+id,Label,values,lambdas
+01-Diagnostic_1F,TOTAL,1672.87,
+01-Diagnostic_1F,Catch,0.43703,
+01-Diagnostic_1F,Equil_catch,0,
+01-Diagnostic_1F,Survey,-29.5033,
+01-Diagnostic_1F,Length_comp,151.609,
+01-Diagnostic_1F,Age_comp,121.472,
+01-Diagnostic_1F,SizeFreq,1434.6,
+01-Diagnostic_1F,Recruitment,-5.88377,1
+01-Diagnostic_1F,InitEQ_Regime,0,1
+01-Diagnostic_1F,Forecast_Recruitment,0.0210218,1
+01-Diagnostic_1F,Parm_priors,0,1
+01-Diagnostic_1F,Parm_softbounds,0.0196924,
+01-Diagnostic_1F,Parm_devs,0,1
+01-Diagnostic_1F,F_Ballpark,0.0958203,1
+01-Diagnostic_1F,F_Ballpark(info_only)_2010_estF_tgtF,0.464774,0.3
+01-Diagnostic_1F,Crash_Pen,0,1

@@ -14,18 +14,18 @@ derived <- model$derived_quants
 dynamic <- model$Dynamic_Bzero
 
 # Calculate reference points
-Clatest <- annual$dead_catch_B_an[annual$year == 2023]
-Flatest <- annual$"F=Z-M"[annual$year == 2022]
+Clatest <- annual$dead_catch_B_an[annual$year == 2022]
+Flatest <- annual$"F=Z-M"[annual$year == 2021]
 Fmsy <- derived$Value[derived$Label == "annF_MSY"]
-Frecent <- mean(annual$"F=Z-M"[annual$year %in% 2019:2022])
+Frecent <- mean(annual$"F=Z-M"[annual$year %in% 2018:2021])
 MSY <- derived$Value[derived$Label == "Dead_Catch_MSY"]
 SB0 <- derived$Value[derived$Label == "SSB_Virgin"]
-SBF0 <- mean(dynamic$SSB_nofishing[dynamic$Yr %in% 2013:2022])
+SBF0 <- mean(dynamic$SSB_nofishing[dynamic$Yr %in% 2012:2021])
 SBlatest <- derived$Value[derived$Label == "SSB_2023"]
 SBmsy <- derived$Value[derived$Label == "SSB_MSY"]
-SBrecent <- mean(derived$Value[derived$Label %in% paste0("SSB_", 2020:2023)])
-TBlatest <- annual$Bio_all_an[annual$year == 2023]
-TBrecent <- mean(annual$Bio_all_an[annual$year %in% 2020:2023])
+SBrecent <- mean(derived$Value[derived$Label %in% paste0("SSB_", 2019:2022)])
+TBlatest <- annual$Bio_all_an[annual$year == 2022]
+TBrecent <- mean(annual$Bio_all_an[annual$year %in% 2019:2022])
 Flatest_Fmsy <- Flatest / Fmsy
 Frecent_Fmsy <- Frecent / Fmsy
 SBlatest_SB0 <- SBlatest / SB0
