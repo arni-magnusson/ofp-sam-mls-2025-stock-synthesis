@@ -1,7 +1,7 @@
 # Run analysis, write model results
 
 # Before: ss3, ss3.exe (boot/software/ss3),
-#         forecast.ss, starter.ss, swo2025.ctl, swo2025.dat (boot/data/ss3)
+#         forecast.ss, starter.ss, control.ss, data.ss (boot/data/ss3)
 # After:  CompReport.sso, covar.sso, Forecast-report.sso, Report.sso,
 #         warning.sso, wtatage.ss_new (model)
 
@@ -16,8 +16,8 @@ cp(file.path("boot/software/ss3", exefile), "model")
 # Get model input files
 cp("boot/data/ss3/starter.ss", "model")
 cp("boot/data/ss3/forecast.ss", "model")
-cp("boot/data/ss3/swo2025.ctl", "model")
-cp("boot/data/ss3/swo2025.dat", "model")
+cp("boot/data/ss3/control.ss", "model")
+cp("boot/data/ss3/data.ss", "model")
 
 # Run model
 setwd("model")
