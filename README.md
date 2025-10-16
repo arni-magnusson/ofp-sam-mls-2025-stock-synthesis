@@ -2,7 +2,7 @@
 
 Download MLS 2024 revised assessment report:
 - **Revised 2024 stock assessment of striped marlin in the southwestern Pacific Ocean: Part 1 - integrated assessment in Stock Synthesis**\
-  **[WCPFC-SC21-2025/SA-WP-06](https://meetings.wcpfc.int/node/26682)**
+  **[WCPFC-SC21-2025/SA-WP-06](https://meetings.wcpfc.int/node/26682)**\
   **Note:** This assessment was not used for management advice.
 
 Download MLS 2024 revised Stock Synthesis model:
