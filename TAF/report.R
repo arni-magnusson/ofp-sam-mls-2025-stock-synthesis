@@ -16,8 +16,8 @@ stats <- read.taf("output/stats.csv")
 timeseries.area <- read.taf("output/timeseries_area.csv")
 summary <- read.taf("output/summary.csv")
 
-# Plot time series of SB by area
-taf.png("timeseries_area")
+# Plot time series of SB
+taf.png("timeseries")
 plot(SB~Yr, timeseries.area, ylim=c(0,25e3), type="n", xlab="Year",
      ylab="Spawning biomass (t)", bty="n")
 abline(h=seq(0, 25e3, 5e3), col="gray", lty=3)
