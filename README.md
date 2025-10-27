@@ -7,7 +7,7 @@ Download MLS 2024 revised assessment report:
   **[WCPFC-SC21-2025/SA-WP-06](https://meetings.wcpfc.int/node/26682)**
 
 Download MLS 2024 revised Stock Synthesis model:
-- Clone the **[mls-2025-stock-synthesis](https://github.com/PacificCommunity/ofp-sam-mls-2025-stock-synthesis)** repository or download as **[main.zip](https://github.com/PacificCommunity/ofp-sam-swo-2025-diagnostic/archive/refs/heads/main.zip)** file
+- Clone the **[mls-2025-stock-synthesis](https://github.com/PacificCommunity/ofp-sam-mls-2025-stock-synthesis)** repository or download as **[main.zip](https://github.com/PacificCommunity/ofp-sam-mls-2025-stock-synthesis/archive/refs/heads/main.zip)** file
 
 ## Explore data, model settings, and results
 
