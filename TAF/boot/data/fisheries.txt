@@ -1,23 +1,16 @@
-Fishery              Unit     Years    Quarters Likelihood   Region    Gear_Type        Comps           Selectivity
-01.LL.JP.1          numbers  1952-2022  284   Downweighted   JP        Longline1        Length, Weight  "Double Normal"
-02.LL.JP.2.late     numbers  1979-2022  176   Downweighted   JP        Longline2        Length, Weight  "Double Normal"
-03.LL.JP.3          numbers  1952-2022  284   Downweighted   JP        Longline3        Length, Weight  "Double Normal"
-04.LL.JP.4          numbers  1954-2022  276   NA             JP        Longline4        Removed         "Double Normal"
-05.LL.TW.4          numbers  1967-2022  224   Downweighted   TW        Longline4        Length          "Mirror 4"
-06.LL.AU.2          numbers  1987-2022  144   Downweighted   AU        Longline2        Weight          "Double Normal"
-07.LL.AU.3          numbers  1987-2022  144   Downweighted   AU        Longline3        Weight          "Double Normal"
-08.LL.NZ.4          numbers  1990-2022  132   NA             NZ        Longline3        Removed         "Mirror 7"
-09.REC.AU.3         numbers  1952-2022  284   Downweighted   AU        Recreational3    Weight          "Double Normal"
-10.REC.NZ.3         numbers  1952-2022  284   Downweighted   NZ        Recreational3    Length, Weight  "Logistic"
-11.LL.ALL.1         numbers  1967-2022  224   Downweighted   DWFN/PICT Longline1        Length          "Mirror 1"
-12.LL.ALL.2         numbers  1967-2022  224   Downweighted   DWFN/PICT Longline2        Length          "Mirror 2"
-13.LL.ALL.3         numbers  1968-2022  220   NA             DWFN/PICT Longline3        Removed         "Mirror 3"
-14.LL.ALL.4         numbers  1976-2022  188   NA             DWFN/PICT Longline4        Removed         "Mirror 4"
-15.LL.JP.2.early    numbers  1952-1978  108   NA             JP        Longline2        Removed         "Mirror 2"
-16.LL.NewCal.2      numbers  1983-2022  160   Downweighted   NC        Longline2        Length          "Double Normal"
-17.LL.FPoly.4       numbers  1992-2022  124   Downweighted   PF        Longline4        Length          "Double Normal"
-18.S01.1-4          numbers  1979-2022  176   NA             -         Longline1-4      -               "Double Normal"
-19.S02.NZ           numbers  1975-2022  192   NA             -         Recreational3    -               "Double Normal"
-20.S03.AU           numbers  1998-2022  100   NA             -         Longline2 & 3    -               "Mirror 6"
-21.S04.PICT.NCFJTO  numbers  2001-2022   88   NA             -         Longline2        -               "Mirror 16"
-22.S04.PICT.PF      numbers  2002-2022   84   NA             -         Longline1 & 4    -               "Mirror 17"
+Fishery              Unit     Years      Qrt   Likelihood     Region    Gear_Type        Comps           Selectivity      Mirror
+01.LL.JP.1          numbers  1952-2022  284   Downweighted   JP        Longline1        "Length, Weight"  "Double Normal"     -
+02.LL.JP.2.late     numbers  1979-2022  176   Downweighted   JP        Longline2        "Length, Weight"  "Double Normal"     -
+03.LL.JP.3          numbers  1952-2022  284   Downweighted   JP        Longline3        "Length, Weight"  "Double Normal"     -
+04.LL.JP.4          numbers  1954-2022  276   NA             JP        Longline4        "Removed"         "Double Normal"     - 
+05.LL.TW.4          numbers  1967-2022  224   Downweighted   TW        Longline4        "Length"          "Mirror 4"          04
+06.LL.AU.2          numbers  1987-2022  144   Downweighted   AU        Longline2        "Weight"          "Double Normal"     -
+07.LL.AU.3          numbers  1987-2022  144   Downweighted   AU        Longline3        "Weight"          "Double Normal"     -
+08.LL.NZ.4          numbers  1990-2022  132   NA             NZ        Longline3        "Removed"         "Mirror 7"          07
+09.REC.AU.3         numbers  1952-2022  284   Downweighted   AU        Recreational3    "Weight"          "Double Normal"     -
+10.REC.NZ.3         numbers  1952-2022  284   Downweighted   NZ        Recreational3    "Length, Weight"  "Logistic"          -
+11.LL.ALL.1         numbers  1967-2022  224   Downweighted   DWFN/PICT Longline1        "Length"          "Mirror 1"          01 
+12.LL.ALL.2         numbers  1967-2022  224   Downweighted   DWFN/PICT Longline2        "Length"          "Mirror 2"          02
+13.LL.ALL.3         numbers  1968-2022  220   NA             DWFN/PICT Longline3        "Removed"         "Mirror 3"          03
+14.LL.ALL.4         numbers  1976-2022  188   NA             DWFN/PICT Longline4        "Removed"         "Mirror 4"          04
+15.LL.JP.2.early    numbers  1952-1978  108   NA             JP        Longline2        "Removed"         "Mirror 2"          02
