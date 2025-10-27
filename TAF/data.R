@@ -6,7 +6,7 @@
 
 library(TAF)
 library(r4ss)
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+#setwd(dirname(rstudioapi::getActiveDocumentContext()$path)) if you run the script in Rstudio this line will works ok
 
 mkdir("data")
 
