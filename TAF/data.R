@@ -19,7 +19,7 @@ cpue <- dat$CPUE
 cpue$month <- NULL
 
 # Fisheries
-fisheries <- read.table("boot/initial/data/fisheries.txt", header=TRUE)
+fisheries <- read.table("boot/data/fisheries.txt", header=TRUE)
 
 # Length comps
 length.comps <- comp2long(dat$lencomp)
