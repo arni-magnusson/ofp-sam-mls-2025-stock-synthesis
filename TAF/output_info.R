@@ -35,7 +35,6 @@ likelihoods <- data.frame(t(likelihoods["values"]), row.names=NULL)
 
 # Selectivity
 selectivity <- sizeselex[sizeselex$Factor == "Lsel",]
-selectivity <- selectivity[selectivity$Sex == 1,]
 selectivity <- selectivity[selectivity$Yr == model$endyr,]
 exclude <- c("Factor", "Yr", "Sex", "Label")
 selectivity <- selectivity[!names(selectivity) %in% exclude]
