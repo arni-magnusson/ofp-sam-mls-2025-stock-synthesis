@@ -26,6 +26,7 @@ length.comps <- comp2long(dat$lencomp)
 length.comps <- length.comps[length.comps$sex == 0,]
 length.comps$part <- NULL
 length.comps$sex <- NULL
+length.comps <- length.comps[length.comps$year > 0,]
 
 # Otoliths
 otoliths <- age2long(dat$agecomp, expand=TRUE)
@@ -42,6 +43,7 @@ weight.comps <- weight.comps[weight.comps$sex == 0,]
 weight.comps$method <- NULL
 weight.comps$part <- NULL
 weight.comps$sex <- NULL
+weight.comps <- weight.comps[weight.comps$year > 0,]
 
 # Write CSV tables
 write.taf(cpue, dir="data")
