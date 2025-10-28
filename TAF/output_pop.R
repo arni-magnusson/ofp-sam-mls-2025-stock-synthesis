@@ -22,7 +22,7 @@ z.area <- model$Z_by_area[model$Z_by_area$Era == "TIME",]
 batage <- batage[batage$Seas == 1,]
 batage <- batage[batage$"Beg/Mid" == "B",]
 batage <- batage[batage$BirthSeas == 1,]
-batage <- batage[c("Area", "Sex", "Yr", grepv("[0-9]", names(batage)))]
+batage <- batage[c("Area", "Yr", grepv("[0-9]", names(batage)))]
 batage <- wide2long(batage, names=c("Age", "B"))
 
 # F at age
@@ -34,8 +34,8 @@ z.area <- z.area[z.area$BirthSeas == 1,]
 z.area <- z.area[!names(z.area) %in% exclude]
 m.area <- wide2long(m.area)
 z.area <- wide2long(z.area)
-m.area <- aggregate(Value~Area+Sex+Yr+Age, m.area, mean)
-z.area <- aggregate(Value~Area+Sex+Yr+Age, z.area, mean)
+m.area <- aggregate(Value~ Area + Yr + Age, m.area, mean)
+z.area <- aggregate(Value~ Area + Yr + Age, z.area, mean)
 fatage <- z.area
 fatage$Value <- z.area$Value - m.area$Value
 names(fatage)[names(fatage) == "Value"] <- "F"
@@ -44,7 +44,7 @@ names(fatage)[names(fatage) == "Value"] <- "F"
 natage <- natage[natage$Seas == 1,]
 natage <- natage[natage$"Beg/Mid" == "B",]
 natage <- natage[natage$BirthSeas == 1,]
-natage <- natage[c("Area", "Sex", "Yr", grepv("[0-9]", names(natage)))]
+natage <- natage[c("Area", "Yr", grepv("[0-9]", names(natage)))]
 natage <- wide2long(natage, names=c("Age", "N"))
 
 # Time series by area
