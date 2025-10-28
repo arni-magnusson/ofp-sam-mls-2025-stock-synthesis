@@ -5,12 +5,11 @@
 #         timeseries_area.csv, (output)
 
 library(TAF)
-library(wrapr)
 mkdir("output")
 
 # Read model results
 model <- readRDS("model/model.rds")
-annual <- model$annual_time_series
+annual <- model$annual_time_series[model$annual_time_series$Era == "TIME",]
 batage <- model$batage[model$batage$Era == "TIME",]
 derived <- model$derived_quants
 dynamic <- model$Dynamic_Bzero[model$Dynamic_Bzero$Era == "TIME",]
