@@ -1,16 +1,17 @@
-Fishery              Unit     Years      Qrt   Likelihood     Region    Gear_Type        Comps           Selectivity      Mirror
-01.LL.JP.1          numbers  1952-2022  284   Downweighted   JP        Longline1        "Length, Weight"  "Double Normal"     -
-02.LL.JP.2.late     numbers  1979-2022  176   Downweighted   JP        Longline2        "Length, Weight"  "Double Normal"     -
-03.LL.JP.3          numbers  1952-2022  284   Downweighted   JP        Longline3        "Length, Weight"  "Double Normal"     -
-04.LL.JP.4          numbers  1954-2022  276   NA             JP        Longline4        "Removed"         "Double Normal"     - 
-05.LL.TW.4          numbers  1967-2022  224   Downweighted   TW        Longline4        "Length"          "Mirror 4"          04
-06.LL.AU.2          numbers  1987-2022  144   Downweighted   AU        Longline2        "Weight"          "Double Normal"     -
-07.LL.AU.3          numbers  1987-2022  144   Downweighted   AU        Longline3        "Weight"          "Double Normal"     -
-08.LL.NZ.4          numbers  1990-2022  132   NA             NZ        Longline3        "Removed"         "Mirror 7"          07
-09.REC.AU.3         numbers  1952-2022  284   Downweighted   AU        Recreational3    "Weight"          "Double Normal"     -
-10.REC.NZ.3         numbers  1952-2022  284   Downweighted   NZ        Recreational3    "Length, Weight"  "Logistic"          -
-11.LL.ALL.1         numbers  1967-2022  224   Downweighted   DWFN/PICT Longline1        "Length"          "Mirror 1"          01 
-12.LL.ALL.2         numbers  1967-2022  224   Downweighted   DWFN/PICT Longline2        "Length"          "Mirror 2"          02
-13.LL.ALL.3         numbers  1968-2022  220   NA             DWFN/PICT Longline3        "Removed"         "Mirror 3"          03
-14.LL.ALL.4         numbers  1976-2022  188   NA             DWFN/PICT Longline4        "Removed"         "Mirror 4"          04
-15.LL.JP.2.early    numbers  1952-1978  108   NA             JP        Longline2        "Removed"         "Mirror 2"          02
+Fishery              Unit     Years      Qrt   Likelihood      Comps           Selectivity      Mirror
+01.LL.JP.1          numbers  1952-2022  284   Downweighted    Length, Weight  "Double Normal"     -
+02.LL.JP.2.late     numbers  1979-2022  176   Downweighted    Length, Weight  "Double Normal"     -
+03.LL.JP.3          numbers  1952-2022  284   Downweighted    Length, Weight  "Double Normal"     -
+04.LL.JP.4          numbers  1954-2022  276   NA              Removed         "Double Normal"     - 
+05.LL.TW.4          numbers  1967-2022  224   Downweighted    Length          "Mirror 4"          04
+06.LL.AU.2          numbers  1987-2022  144   Downweighted    Weight          "Double Normal"     -
+07.LL.AU.3          numbers  1987-2022  144   Downweighted    Weight          "Double Normal"     -
+08.LL.NZ.4          numbers  1990-2022  132   NA              Removed         "Mirror 7"          07
+09.REC.AU.3         numbers  1952-2022  284   Downweighted    Weight          "Double Normal"     -
+10.REC.NZ.3         numbers  1952-2022  284   Downweighted    Length, Weight  "Logistic"          -
+11.LL.ALL.1         numbers  1967-2022  224   Downweighted    Length          "Mirror 1"          01 
+12.LL.ALL.2         numbers  1967-2022  224   Downweighted    Length          "Mirror 2"          02
+13.LL.ALL.3         numbers  1968-2022  220   NA              Removed         "Mirror 3"          03
+14.LL.ALL.4         numbers  1976-2022  188   NA              Removed         "Mirror 4"          04
+15.LL.JP.2.early    numbers  1952-1978  108   NA              Removed         "Mirror 2"          02
+16.S01.1-4          numbers  1979-2022  176   NA              -               "Double Normal"     - 
