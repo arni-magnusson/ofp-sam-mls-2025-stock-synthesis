@@ -6,7 +6,7 @@
 
 library(TAF)
 library(r4ss)
-
+#setwd("C:/git/PacificCommunity/ofp-sam/ofp-sam-mls-2025-stock-synthesis/TAF")
 mkdir("output")
 
 # Read model results
@@ -14,7 +14,6 @@ model <- readRDS("model/model.rds")
 catch <- model$catch
 endgrowth <- model$endgrowth
 likelihoods <- model$likelihoods_used
-movement <- model$movement
 sizeselex <- model$sizeselex
 
 # Biology
@@ -33,11 +32,6 @@ row.names(catch) <- NULL
 # Likelihoods
 likelihoods <- likelihoods[likelihoods$values != 0,]
 likelihoods <- data.frame(t(likelihoods["values"]), row.names=NULL)
-
-# Movement
-movement <- movement[movement$Seas==1, c("Source_area", "Dest_area", "age0")]
-names(movement) <- c("Source", "Dest", "Rate")
-row.names(movement) <- NULL
 
 # Selectivity
 selectivity <- sizeselex[sizeselex$Factor == "Lsel",]
@@ -60,6 +54,5 @@ stats <- data.frame(npar, objfun, gradient, start, runtime, version)
 write.taf(biology, dir="output")
 write.taf(catch, dir="output")
 write.taf(likelihoods, dir="output")
-write.taf(movement, dir="output")
 write.taf(stats, dir="output", quote=TRUE)
 write.taf(selectivity, dir="output")
