@@ -1,7 +1,7 @@
 # Produce plots and tables for report
 
 # Before: otoliths.csv (data), biology.csv, likelihoods.csv, stats.csv,
-#         timeseries_area.csv, summary.csv (output)
+#         summary.csv (output)
 # After:  biology.csv, growth.png, likelihoods.csv, stats.csv, timeseries.png,
 #         summary.csv (report)
 
@@ -14,7 +14,6 @@ biology <- read.taf("output/biology.csv")
 likelihoods <- read.taf("output/likelihoods.csv")
 otoliths <- read.taf("data/otoliths.csv")
 stats <- read.taf("output/stats.csv")
-timeseries.area <- read.taf("output/timeseries_area.csv")
 summary <- read.taf("output/summary.csv")
 
 # Plot growth curves on top of otoliths
@@ -28,11 +27,11 @@ dev.off()
 
 # Plot time series of SB
 taf.png("timeseries")
-plot(SB~Yr, timeseries.area, ylim=c(0,25e3), type="n", xlab="Year",
+plot(SB~Year, summary, ylim=c(0,25e3), type="n", xlab="Year",
      ylab="Spawning biomass (t)", bty="n")
 abline(h=seq(0, 25e3, 5e3), col="gray", lty=3)
 box()
-lines(SB~Yr, timeseries.area, subset=Area==1, lwd=3, col=5)
+lines(SB~Year, summary, lwd=3, col=5)
 dev.off()
 
 # Format tables
