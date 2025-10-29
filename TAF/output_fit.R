@@ -12,18 +12,18 @@ mkdir("output")
 model <- readRDS("model/model.rds")
 
 # Construct cpue table
-cpue <- model$cpue[c("Fleet", "Fleet_name", "Area", "Yr", "Obs", "Exp", "SE")]
+cpue <- model$cpue[c("Fleet", "Fleet_name", "Yr", "Obs", "Exp", "SE")]
 row.names(cpue) <- NULL
 
 # Construct length.comps table
-length.comps <- model$lendbase[c("Yr", "Month", "Fleet", "Area", "Bin", "Obs",
-                                 "Exp", "Nsamp_adj")]
+length.comps <- model$lendbase[c("Yr", "Month", "Fleet", "Bin", "Obs", "Exp",
+                                 "Nsamp_adj")]
 names(length.comps)[names(length.comps) == "Bin"] <- "Length"
 row.names(length.comps) <- NULL
 
 # Construct weight.comps table
-weight.comps <- model$sizedbase[c("Yr", "Month", "Fleet", "Area", "Bin", "Obs",
-                                  "Exp", "Nsamp_adj")]
+weight.comps <- model$sizedbase[c("Yr", "Month", "Fleet", "Bin", "Obs", "Exp",
+                                  "Nsamp_adj")]
 names(weight.comps)[names(weight.comps) == "Bin"] <- "Weight"
 row.names(weight.comps) <- NULL
 
