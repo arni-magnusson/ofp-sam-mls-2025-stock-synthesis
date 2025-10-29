@@ -1,8 +1,8 @@
 # Produce plots and tables for report
 
-# Before: biology.csv, likelihoods.csv, stats.csv, timeseries_area.csv,
-#         summary.csv (output)
-# After:  biology.csv, likelihoods.csv, stats.csv, timeseries_area.png,
+# Before: otoliths.csv (data), biology.csv, likelihoods.csv, stats.csv,
+#         timeseries_area.csv, summary.csv (output)
+# After:  biology.csv, growth.png, likelihoods.csv, stats.csv, timeseries.png,
 #         summary.csv (report)
 
 library(TAF)
@@ -12,9 +12,19 @@ mkdir("report")
 # Read tables
 biology <- read.taf("output/biology.csv")
 likelihoods <- read.taf("output/likelihoods.csv")
+otoliths <- read.taf("data/otoliths.csv")
 stats <- read.taf("output/stats.csv")
 timeseries.area <- read.taf("output/timeseries_area.csv")
 summary <- read.taf("output/summary.csv")
+
+# Plot growth curves on top of otoliths
+taf.png("growth")
+plot(NA, xlim=range(as.numeric(biology$Age)),
+     ylim=lim(as.numeric(c(biology$Len, otoliths$Lbin))),
+     xlab="Age (yr)", ylab="Length (cm)")
+points(Lbin~age, otoliths, pch=16, col=adjustcolor(6, 0.3))
+lines(Len~Age, biology, lwd=3)
+dev.off()
 
 # Plot time series of SB
 taf.png("timeseries")
