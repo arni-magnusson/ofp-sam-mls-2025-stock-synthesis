@@ -2,7 +2,7 @@
 
 # After:  ss3 (boot/data)
 # After:  CompReport.sso, covar.sso, Forecast-report.sso, Report.sso,
-#         warning.sso, wtatage.ss_new (model)
+#         ss3.par, warning.sso, wtatage.ss_new (model)
 
 library(TAF)
 
@@ -15,3 +15,4 @@ cp("boot/data/ss3/covar.sso", "model")
 cp("boot/data/ss3/Forecast-report.sso", "model")
 cp("boot/data/ss3/wtatage.ss_new", "model")
 cp("boot/data/ss3/warning.sso", "model")
+cp("boot/data/ss3/ss3.par", "model")
