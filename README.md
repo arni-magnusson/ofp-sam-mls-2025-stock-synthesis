@@ -11,7 +11,7 @@ Download MLS 2024 revised Stock Synthesis model:
 
 ## Explore data, model settings, and results
 
-The `ss3.zip` archive includes all the Stock Synthesis (SS3) input files, model settings, and output files. 
+The [ss3] folder includes all the Stock Synthesis (SS3) input files, model settings, and output files.
 
 The **TAF** folder extracts the data and results from SS3 format to CSV format that can be examined using Excel, R, or other statistical software. [TAF](https://cran.r-project.org/package=TAF) is a standard reproducible format for stock assessments that is practical for making the SS3 **[data](TAF/data)** and **[output](TAF/output)** tables available in a format that is easy to examine. The **[report](TAF/report)** folder contains formatted tables and example plots.
 
